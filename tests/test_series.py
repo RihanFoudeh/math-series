@@ -1,5 +1,11 @@
-
 from math_series.series import *
+
+
+def test_fibonacci_for_number_zero():
+    excepted= 0
+    actual= fibonacci(0)
+    assert excepted == actual
+
 
 def test_fibonacci_for_number_one():
     excepted= 1
@@ -16,6 +22,7 @@ def test_fibonacci_for_number_seven():
     actual= fibonacci(7)
     assert excepted == actual
 
+
 def test_lucas_for_number_one():
     excepted= 1
     actual= lucas(1)
@@ -25,6 +32,7 @@ def test_lucas_for_number_five():
     excepted= 11
     actual= lucas(5)
     assert excepted == actual
+
 
 
 def test_sum_series():
